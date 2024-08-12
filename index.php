@@ -1,5 +1,7 @@
 <?php
 require("connection.php");
+session_start();
+
 ?>
 
 <!DOCTYPE html>
@@ -15,10 +17,10 @@ require("connection.php");
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
+<body class="text-white">
     <?php require("header.php") ?>
     <div class="m-5">
-        <div class="container mx-auto px-10 py-5 bg-gray-300 rounded-2xl">
+        <div class="container mx-auto px-10 py-5 bg-[#14213d] rounded-2xl">
             <?php require("routes.php"); ?>
         </div>
     </div>

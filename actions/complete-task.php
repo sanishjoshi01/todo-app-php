@@ -1,6 +1,5 @@
 <?php
-
-require("connection.php");
+require("../connection.php");
 
 if (isset($_POST['id']) && isset($_POST['is_completed'])) {
     $id = $_POST['id'];

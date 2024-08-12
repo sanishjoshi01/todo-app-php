@@ -6,6 +6,7 @@ $uri = parse_url($_SERVER["REQUEST_URI"])["path"];
 $routes = [
     "/" => "pages/main.php",
     "/login" => "pages/login.php",
+    "/signup" => "pages/signup.php",
 ];
 
 if (array_key_exists($uri, $routes)) {
